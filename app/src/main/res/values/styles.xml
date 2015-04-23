@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="miimijTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/miimij_primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/miimij_primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/miimij_accent</item>
+    </style>
+    <style name="miimijThemeNoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/miimij_primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/miimij_primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/miimij_accent</item>
+    </style>
+    <color name="miimij_orange">#d2ff5d1d</color>
+    <color name="white">#FFFFFF</color>
+    <color name="miimij_primary">#ff1adcb2</color>
+    <color name="miimij_primary_dark">#ff139b7b</color>
+    <color name="miimij_accent">#ff1adcb2</color>
+
+</resources>
