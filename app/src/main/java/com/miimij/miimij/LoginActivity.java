@@ -1,12 +1,17 @@
 package com.miimij.miimij;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 
 public class LoginActivity extends ActionBarActivity {
+    public final static String LOGIN_EMAIL = "com.miimij.miimij.login_username";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +27,14 @@ public class LoginActivity extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_login, menu);
         return true;
+    }
+
+    public void startSignUpActivity(View view){
+        Intent intent = new Intent(this, SignUpActivity.class);
+        EditText editText = (EditText) findViewById(R.id.login_username);
+        String message = editText.getText().toString();
+        intent.putExtra(LOGIN_EMAIL, message);
+        startActivity(intent);
     }
 
     @Override

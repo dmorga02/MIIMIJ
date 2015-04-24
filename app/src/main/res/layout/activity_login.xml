@@ -34,9 +34,10 @@
             android:layout_marginTop="@dimen/login_edit_text_margin"
             android:ems="10"
             android:hint="@string/email"
-            android:inputType="textEmailAddress"
+            android:inputType="textEmailAddress|textAutoComplete"
             android:textColor="@color/miimij_orange"
-            android:textColorHint="@color/grey" />
+            android:textColorHint="@color/grey"
+            />
 
         <EditText
             android:id="@+id/login_password"
@@ -76,7 +77,8 @@
             android:layout_gravity="center_horizontal"
             android:clickable="true"
             android:text="@string/sign_up_q"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:onClick="startSignUpActivity"/>
 
 
     </LinearLayout>

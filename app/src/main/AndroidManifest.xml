@@ -21,6 +21,15 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/miimijThemeNoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.miimij.miimij.LoginActivity" />
+        </activity>
     </application>
 
 </manifest>
